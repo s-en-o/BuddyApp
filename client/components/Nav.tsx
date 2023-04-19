@@ -6,7 +6,6 @@ import { styled } from '@mui/material/styles'
 import { useEffect } from 'react'
 
 import { Typography, AppBar, Toolbar, Box, Button } from '../styles/imports'
-import { appTheme } from '../styles/theme'
 
 export default function Nav() {
   const { logout, loginWithRedirect, user } = useAuth0()

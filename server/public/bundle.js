@@ -29018,7 +29018,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 function AllProfiles() {
   const dispatch = (0,_hooks__WEBPACK_IMPORTED_MODULE_2__.useAppDispatch)();
   const users = (0,_hooks__WEBPACK_IMPORTED_MODULE_2__.useAppSelector)(state => state.localReducer);
@@ -29026,11 +29025,6 @@ function AllProfiles() {
     dispatch((0,_actions_local__WEBPACK_IMPORTED_MODULE_1__.setLocalThunk)());
   }, [dispatch]);
   const [showUsers, setShowUsers] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-
-  // const userData: User[] = useAppSelector((store) => store.localReducer)
-  // const userId = Number(useParams().id)
-  // const userProfile = userData.find((person) => person.id === userId)
-
   const urlPath = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useLocation)().pathname;
   const isLocal = urlPath.indexOf('local') !== -1;
   const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useNavigate)();
@@ -30449,9 +30443,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function SingleProfilePage() {
-  const {
-    loginWithRedirect
-  } = (0,_auth0_auth0_react__WEBPACK_IMPORTED_MODULE_1__.useAuth0)();
   const dispatch = (0,_hooks__WEBPACK_IMPORTED_MODULE_3__.useAppDispatch)();
   const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_9__.useNavigate)();
   const {
@@ -30461,7 +30452,6 @@ function SingleProfilePage() {
   const userId = Number((0,react_router_dom__WEBPACK_IMPORTED_MODULE_9__.useParams)().id);
   const userData = (0,_hooks__WEBPACK_IMPORTED_MODULE_3__.useAppSelector)(store => store.localReducer);
   const userProfile = userData.find(person => person.id === userId);
-  const authIdMatches = user?.sub === userProfile?.auth_id;
   (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
     dispatch((0,_actions_local__WEBPACK_IMPORTED_MODULE_4__.getLocalThunk)(userId));
   }, [dispatch, userId]);

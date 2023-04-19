@@ -8,7 +8,6 @@ import EditProfileForm from './EditProfileForm'
 
 import { User } from '../../models/Users'
 
-import { ThemeProvider } from '../styles/imports'
 import {
   Typography,
   Button,
@@ -24,7 +23,6 @@ import { StyledBox, StyledContentBox } from '../styles/styles'
 import { fontSize } from '@mui/system'
 
 export default function SingleProfilePage() {
-  const { loginWithRedirect } = useAuth0()
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
 
@@ -35,8 +33,6 @@ export default function SingleProfilePage() {
 
   const userData: User[] = useAppSelector((store) => store.localReducer)
   const userProfile = userData.find((person) => person.id === userId)
-
-  const authIdMatches = user?.sub === userProfile?.auth_id
 
   useEffect(() => {
     dispatch(getLocalThunk(userId))
