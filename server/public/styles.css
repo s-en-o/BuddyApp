@@ -78,13 +78,13 @@ header a:hover {
   box-shadow: none !important;
   border-color: rgba(57, 127, 181, 0.3098039216) !important;
   background-color: transparent !important;
-  transition: background-color 0.8s ease !important;
+  transition: background-color border-color 1s ease !important;
   border: 0.5px;
 }
 
 .custom-appbar.scroll {
   backdrop-filter: blur(6px) !important;
-  background-color: rgba(161, 213, 253, 0.1607843137) !important;
+  background-color: rgba(240, 240, 240, 0.2745098039) !important;
 }
 
 .button-style {
