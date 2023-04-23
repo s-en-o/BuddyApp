@@ -46,24 +46,22 @@ function Home() {
               style={{ textDecoration: 'none' }}
             >
               <Box>
-                <CardActionArea className="container-img">
-                  <StyledCardMedia
-                    component="img"
-                    image="./images/localnew.jpg"
-                    alt="local image"
-                    className="action-card"
-                  />
-                  <StyledCardLabel
-                    variant="h6"
-                    align="center"
-                    sx={{
-                      fontWeight: '400',
-                      fontSize: '1.5rem',
-                    }}
-                  >
-                    Connect with a local
-                  </StyledCardLabel>
-                </CardActionArea>
+                <StyledCardMedia
+                  component="img"
+                  image="./images/localnew.jpg"
+                  alt="local image"
+                  className="action-card"
+                />
+                <StyledCardLabel
+                  variant="h6"
+                  align="center"
+                  sx={{
+                    fontWeight: '400',
+                    fontSize: '1.5rem',
+                  }}
+                >
+                  Connect with a local
+                </StyledCardLabel>
               </Box>
             </Link>
           </IfNotAuthenticated>
@@ -74,23 +72,21 @@ function Home() {
               style={{ textDecoration: 'none' }}
             >
               <Box>
-                <CardActionArea className="container-img">
-                  <StyledCardMedia
-                    component="img"
-                    image="./images/localnew.jpg"
-                    alt="local image"
-                  />
-                  <StyledCardLabel
-                    variant="h6"
-                    align="center"
-                    sx={{
-                      fontWeight: '400',
-                      fontSize: '1.5rem',
-                    }}
-                  >
-                    Connect with a local
-                  </StyledCardLabel>
-                </CardActionArea>
+                <StyledCardMedia
+                  component="img"
+                  image="./images/localnew.jpg"
+                  alt="local image"
+                />
+                <StyledCardLabel
+                  variant="h6"
+                  align="center"
+                  sx={{
+                    fontWeight: '400',
+                    fontSize: '1.5rem',
+                  }}
+                >
+                  Connect with a local
+                </StyledCardLabel>
               </Box>
             </Link>
           </IfAuthenticated>
@@ -104,23 +100,21 @@ function Home() {
               style={{ textDecoration: 'none' }}
             >
               <Box>
-                <CardActionArea className="container-img">
-                  <StyledCardMedia
-                    component="img"
-                    image="./images/intnew.jpg"
-                    alt="international image"
-                  />
-                  <StyledCardLabel
-                    variant="h6"
-                    align="center"
-                    sx={{
-                      fontWeight: '400',
-                      fontSize: '1.5rem',
-                    }}
-                  >
-                    Connect with a international
-                  </StyledCardLabel>
-                </CardActionArea>
+                <StyledCardMedia
+                  component="img"
+                  image="./images/intnew.jpg"
+                  alt="international image"
+                />
+                <StyledCardLabel
+                  variant="h6"
+                  align="center"
+                  sx={{
+                    fontWeight: '400',
+                    fontSize: '1.5rem',
+                  }}
+                >
+                  Connect with a international
+                </StyledCardLabel>
               </Box>
             </Link>
           </IfNotAuthenticated>
@@ -131,23 +125,21 @@ function Home() {
               style={{ textDecoration: 'none' }}
             >
               <Box>
-                <CardActionArea className="container-img">
-                  <StyledCardMedia
-                    component="img"
-                    image="./images/intnew.jpg"
-                    alt="international image"
-                  />
-                  <StyledCardLabel
-                    variant="h6"
-                    align="center"
-                    sx={{
-                      fontWeight: '400',
-                      fontSize: '1.5rem',
-                    }}
-                  >
-                    Connect with an international
-                  </StyledCardLabel>
-                </CardActionArea>
+                <StyledCardMedia
+                  component="img"
+                  image="./images/intnew.jpg"
+                  alt="international image"
+                />
+                <StyledCardLabel
+                  variant="h6"
+                  align="center"
+                  sx={{
+                    fontWeight: '400',
+                    fontSize: '1.5rem',
+                  }}
+                >
+                  Connect with an international
+                </StyledCardLabel>
               </Box>
             </Link>
           </IfAuthenticated>

@@ -30102,24 +30102,21 @@ function Home() {
             style: {
               textDecoration: 'none'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.Box, {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.CardActionArea, {
-                className: "container-img",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardMedia, {
-                  component: "img",
-                  image: "./images/localnew.jpg",
-                  alt: "local image",
-                  className: "action-card"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardLabel, {
-                  variant: "h6",
-                  align: "center",
-                  sx: {
-                    fontWeight: '400',
-                    fontSize: '1.5rem'
-                  },
-                  children: "Connect with a local"
-                })]
-              })
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.Box, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardMedia, {
+                component: "img",
+                image: "./images/localnew.jpg",
+                alt: "local image",
+                className: "action-card"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardLabel, {
+                variant: "h6",
+                align: "center",
+                sx: {
+                  fontWeight: '400',
+                  fontSize: '1.5rem'
+                },
+                children: "Connect with a local"
+              })]
             })
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Authenticated__WEBPACK_IMPORTED_MODULE_0__.IfAuthenticated, {
@@ -30128,23 +30125,20 @@ function Home() {
             style: {
               textDecoration: 'none'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.Box, {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.CardActionArea, {
-                className: "container-img",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardMedia, {
-                  component: "img",
-                  image: "./images/localnew.jpg",
-                  alt: "local image"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardLabel, {
-                  variant: "h6",
-                  align: "center",
-                  sx: {
-                    fontWeight: '400',
-                    fontSize: '1.5rem'
-                  },
-                  children: "Connect with a local"
-                })]
-              })
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.Box, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardMedia, {
+                component: "img",
+                image: "./images/localnew.jpg",
+                alt: "local image"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardLabel, {
+                variant: "h6",
+                align: "center",
+                sx: {
+                  fontWeight: '400',
+                  fontSize: '1.5rem'
+                },
+                children: "Connect with a local"
+              })]
             })
           })
         })]
@@ -30158,23 +30152,20 @@ function Home() {
             style: {
               textDecoration: 'none'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.Box, {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.CardActionArea, {
-                className: "container-img",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardMedia, {
-                  component: "img",
-                  image: "./images/intnew.jpg",
-                  alt: "international image"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardLabel, {
-                  variant: "h6",
-                  align: "center",
-                  sx: {
-                    fontWeight: '400',
-                    fontSize: '1.5rem'
-                  },
-                  children: "Connect with a international"
-                })]
-              })
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.Box, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardMedia, {
+                component: "img",
+                image: "./images/intnew.jpg",
+                alt: "international image"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardLabel, {
+                variant: "h6",
+                align: "center",
+                sx: {
+                  fontWeight: '400',
+                  fontSize: '1.5rem'
+                },
+                children: "Connect with a international"
+              })]
             })
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Authenticated__WEBPACK_IMPORTED_MODULE_0__.IfAuthenticated, {
@@ -30183,23 +30174,20 @@ function Home() {
             style: {
               textDecoration: 'none'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.Box, {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.CardActionArea, {
-                className: "container-img",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardMedia, {
-                  component: "img",
-                  image: "./images/intnew.jpg",
-                  alt: "international image"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardLabel, {
-                  variant: "h6",
-                  align: "center",
-                  sx: {
-                    fontWeight: '400',
-                    fontSize: '1.5rem'
-                  },
-                  children: "Connect with an international"
-                })]
-              })
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_3__.Box, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardMedia, {
+                component: "img",
+                image: "./images/intnew.jpg",
+                alt: "international image"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_4__.StyledCardLabel, {
+                variant: "h6",
+                align: "center",
+                sx: {
+                  fontWeight: '400',
+                  fontSize: '1.5rem'
+                },
+                children: "Connect with an international"
+              })]
             })
           })
         })]
