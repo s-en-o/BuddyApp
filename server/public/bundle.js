@@ -30440,17 +30440,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ SingleProfilePage)
 /* harmony export */ });
 /* harmony import */ var _Authenticated__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Authenticated */ "./client/components/Authenticated.tsx");
-/* harmony import */ var _auth0_auth0_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @auth0/auth0-react */ "./node_modules/@auth0/auth0-react/dist/auth0-react.esm.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../hooks */ "./client/hooks.ts");
-/* harmony import */ var _actions_local__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../actions/local */ "./client/actions/local.ts");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var _EditProfileForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./EditProfileForm */ "./client/components/EditProfileForm.tsx");
-/* harmony import */ var _styles_imports__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/imports */ "./client/styles/imports.ts");
-/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/styles */ "./client/styles/styles.ts");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hooks */ "./client/hooks.ts");
+/* harmony import */ var _actions_local__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../actions/local */ "./client/actions/local.ts");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var _EditProfileForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./EditProfileForm */ "./client/components/EditProfileForm.tsx");
+/* harmony import */ var _styles_imports__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/imports */ "./client/styles/imports.ts");
+/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/styles */ "./client/styles/styles.ts");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -30465,35 +30463,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function SingleProfilePage() {
-  const {
-    loginWithRedirect
-  } = (0,_auth0_auth0_react__WEBPACK_IMPORTED_MODULE_1__.useAuth0)();
-  const dispatch = (0,_hooks__WEBPACK_IMPORTED_MODULE_3__.useAppDispatch)();
-  const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_9__.useNavigate)();
-  const {
-    user
-  } = (0,_auth0_auth0_react__WEBPACK_IMPORTED_MODULE_1__.useAuth0)();
-  console.log(user, 'testing the auth0 user to see what comes up');
-  const userId = Number((0,react_router_dom__WEBPACK_IMPORTED_MODULE_9__.useParams)().id);
-  const userData = (0,_hooks__WEBPACK_IMPORTED_MODULE_3__.useAppSelector)(store => store.localReducer);
+  const dispatch = (0,_hooks__WEBPACK_IMPORTED_MODULE_2__.useAppDispatch)();
+  const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_8__.useNavigate)();
+  const userId = Number((0,react_router_dom__WEBPACK_IMPORTED_MODULE_8__.useParams)().id);
+  const userData = (0,_hooks__WEBPACK_IMPORTED_MODULE_2__.useAppSelector)(store => store.localReducer);
   const userProfile = userData.find(person => person.id === userId);
-  const authIdMatches = user?.sub === userProfile?.auth_id;
-  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
-    dispatch((0,_actions_local__WEBPACK_IMPORTED_MODULE_4__.getLocalThunk)(userId));
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    dispatch((0,_actions_local__WEBPACK_IMPORTED_MODULE_3__.getLocalThunk)(userId));
   }, [dispatch, userId]);
   const handleClick = id => {
-    dispatch((0,_actions_local__WEBPACK_IMPORTED_MODULE_4__.delLocalThunk)(id));
+    dispatch((0,_actions_local__WEBPACK_IMPORTED_MODULE_3__.delLocalThunk)(id));
     navigate('/');
   };
-  const [editMode, setEditMode] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+  const [editMode, setEditMode] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
   const handleEdit = () => {
     setEditMode(!editMode); // Toggle the value of editMode
   };
 
   // const classes = useStyles
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.Container, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.Container, {
       sx: {
         py: 1,
         display: 'flex',
@@ -30502,7 +30492,7 @@ function SingleProfilePage() {
         marginTop: '150px'
       },
       maxWidth: "md",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.Card, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.Card, {
         style: {
           width: '100%',
           margin: 10,
@@ -30513,13 +30503,13 @@ function SingleProfilePage() {
           boxShadow: 'none'
         },
         className: "single-profile",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.CardContent, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.CardContent, {
           sx: {
             position: 'relative',
             display: 'flex',
             flexWrap: 'wrap'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.CardMedia, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.CardMedia, {
             component: "img",
             sx: {
               display: 'flex',
@@ -30534,99 +30524,99 @@ function SingleProfilePage() {
             },
             image: `data:image/jpeg;base64,${userProfile?.profile_img}`,
             alt: userProfile?.user_name
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_7__.StyledBox, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_6__.StyledBox, {
             sx: {
               py: 0,
               maxWidth: 'xs',
               margin: 'auto'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_styles_styles__WEBPACK_IMPORTED_MODULE_7__.StyledContentBox, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_styles_styles__WEBPACK_IMPORTED_MODULE_6__.StyledContentBox, {
               sx: {
                 py: 2,
                 maxWidth: 'xs',
                 margin: 'auto'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.Typography, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.Typography, {
                 variant: "h2",
                 color: "#10466f",
                 children: [userProfile?.first_name, " ", userProfile?.last_name]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.Typography, {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.Typography, {
                 align: "left",
                 color: "#10466f",
                 sx: {
                   py: 2
                 },
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.Typography, {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.Typography, {
                   variant: "h6",
                   sx: {
                     py: 2
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("strong", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("strong", {
                       children: "Username: "
                     }), " ", userProfile?.user_name]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("strong", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("strong", {
                       children: "Age: "
                     }), " ", userProfile?.age]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("strong", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("strong", {
                       children: "From: "
                     }), userProfile?.country_origin, ", ", userProfile?.city]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("strong", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("strong", {
                       children: "Main language: "
                     }), userProfile?.prim_language]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("strong", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("strong", {
                       children: "English level: "
                     }), userProfile?.english_level]
                   })]
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.Typography, {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.Typography, {
                 component: "h5",
                 variant: "h6",
                 align: "left",
                 color: "#10466f",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("strong", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("strong", {
                   children: "About me: "
                 }), " ", userProfile?.description]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.Typography, {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.Typography, {
                 component: "h5",
                 variant: "h6",
                 align: "left",
                 color: "#10466f",
                 gutterBottom: true,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("strong", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("ul", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("strong", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("ul", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
                     children: userProfile?.sharing_one
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
                     children: userProfile?.sharing_two
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
                     children: userProfile?.sharing_three
                   })]
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.Typography, {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.Typography, {
                 component: "h5",
                 variant: "h6",
                 align: "left",
                 color: "#10466f",
-                children: ["You can contact me on:", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("strong", {
+                children: ["You can contact me on:", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("strong", {
                   children: [" ", userProfile?.email]
                 })]
               })]
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.CardActions, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.CardActions, {
           sx: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-start',
             p: 2
           },
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_Authenticated__WEBPACK_IMPORTED_MODULE_0__.AuthIdMatches, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_Authenticated__WEBPACK_IMPORTED_MODULE_0__.AuthIdMatches, {
             id: userProfile?.auth_id,
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.Button, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.Button, {
               size: "large",
               variant: "outlined",
               onClick: () => handleClick(userId),
@@ -30635,7 +30625,7 @@ function SingleProfilePage() {
                 fontSize: '15px !important'
               },
               children: "Delete"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_6__.Button, {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_5__.Button, {
               size: "large",
               variant: "contained",
               onClick: handleEdit,
@@ -30646,7 +30636,7 @@ function SingleProfilePage() {
               children: editMode ? 'Close' : 'Edit'
             })]
           })
-        }), editMode && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_EditProfileForm__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        }), editMode && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_EditProfileForm__WEBPACK_IMPORTED_MODULE_4__["default"], {
           initialData: userProfile ?? null,
           id: userId
         })]
