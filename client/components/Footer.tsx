@@ -8,7 +8,6 @@ function Copyright() {
         buddy.co.nz
       </Link>{' '}
       {new Date().getFullYear()}
-      {'.'}
     </Typography>
   )
 }

@@ -1,23 +1,9 @@
-import {
-  IfAuthenticated,
-  IfNotAuthenticated,
-  AuthIdMatches,
-  AuthIdDoesNotMatch,
-} from './Authenticated'
+import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
 import { useAuth0 } from '@auth0/auth0-react'
 import { Link } from 'react-router-dom'
-import { useAppSelector, useAppDispatch } from '../hooks'
-import { useParams } from 'react-router-dom'
+import { useAppSelector } from '../hooks'
 import { User } from '../../models/Users'
-import { useEffect, useState } from 'react'
-import { getLocalThunk } from '../actions/local'
-import {
-  Typography,
-  Box,
-  Container,
-  CardMedia,
-  CardActionArea,
-} from '../styles/imports'
+import { Typography, Box, Container, CardActionArea } from '../styles/imports'
 
 import {
   StyledContainer,

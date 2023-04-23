@@ -29371,7 +29371,6 @@ function CreateProfileForm() {
     e.preventDefault();
     try {
       const token = await getAccessTokenSilently();
-      console.log(userMethod);
       dispatch((0,_actions_local__WEBPACK_IMPORTED_MODULE_2__.addNewLocalThunk)(userMethod, token));
       dispatch((0,_actions_local__WEBPACK_IMPORTED_MODULE_2__.setLocalThunk)());
       navigate(userMethod.user_status == 'local' ? '/all-profiles/international' : '/all-profiles/local');
@@ -30014,7 +30013,7 @@ function Copyright() {
       color: "inherit",
       href: "https://buddy.co.nz/",
       children: "buddy.co.nz"
-    }), ' ', new Date().getFullYear(), '.']
+    }), ' ', new Date().getFullYear()]
   });
 }
 function Footer() {
@@ -30692,52 +30691,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var _localReducer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./localReducer */ "./client/reducers/localReducer.ts");
-/* harmony import */ var _internationalReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./internationalReducer */ "./client/reducers/internationalReducer.ts");
 
 
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,redux__WEBPACK_IMPORTED_MODULE_2__.combineReducers)({
-  localReducer: _localReducer__WEBPACK_IMPORTED_MODULE_0__["default"],
-  internationalReducer: _internationalReducer__WEBPACK_IMPORTED_MODULE_1__["default"]
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,redux__WEBPACK_IMPORTED_MODULE_1__.combineReducers)({
+  localReducer: _localReducer__WEBPACK_IMPORTED_MODULE_0__["default"]
 }));
-
-/***/ }),
-
-/***/ "./client/reducers/internationalReducer.ts":
-/*!*************************************************!*\
-  !*** ./client/reducers/internationalReducer.ts ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-const initialState = [];
-function InternationalReducer() {
-  let state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-  let action = arguments.length > 1 ? arguments[1] : undefined;
-  const {
-    type,
-    payload
-  } = action;
-  switch (type) {
-    case 'SET_INTUSERS':
-      return payload;
-    case 'ADD_INTUSERS':
-      return [...state, payload];
-    case 'GET_INTUSERS':
-      return state.filter(local => local.id === payload);
-    case 'DEL_INTUSERS':
-      return state.filter(local => local.id !== payload);
-    default:
-      return state;
-  }
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (InternationalReducer);
 
 /***/ }),
 

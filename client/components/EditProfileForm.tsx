@@ -9,18 +9,12 @@ import {
   FormLabel,
   TextField,
   Typography,
-  Container,
   MenuItem,
   Select,
   Button,
   Input,
 } from '@mui/material'
-import {
-  StyledBox,
-  StyledContainer,
-  StyledLargerCard,
-  StyledFormElements,
-} from '../styles/styles'
+import { StyledBox, StyledContainer, StyledLargerCard } from '../styles/styles'
 
 import { SelectChangeEvent } from '@mui/material/Select'
 

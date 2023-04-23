@@ -77,7 +77,6 @@ export default function CreateProfileForm() {
     e.preventDefault()
     try {
       const token = await getAccessTokenSilently()
-      console.log(userMethod)
       dispatch(addNewLocalThunk(userMethod, token))
       dispatch(setLocalThunk())
       navigate(
