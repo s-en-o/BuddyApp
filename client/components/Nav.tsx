@@ -7,7 +7,6 @@ import { useEffect } from 'react'
 
 import { Typography, AppBar, Toolbar, Box, Button } from '../styles/imports'
 
-
 export default function Nav() {
   const { logout, loginWithRedirect, user } = useAuth0()
   const userInBothDB = useAppSelector((redux) =>
@@ -76,6 +75,7 @@ export default function Nav() {
                 Internationals
               </StyledLink>
             </Box>
+            {/* Conditional Statement for Create Profile and My Profile  */}
             {userInBothDB ? (
               <Box sx={{ mx: 1 }}>
                 <Button
@@ -101,6 +101,7 @@ export default function Nav() {
                 </Button>
               </Box>
             )}
+            {/* --------------------------- */}
             <Box sx={{ mx: 1 }}>
               <Button
                 variant="outlined"
