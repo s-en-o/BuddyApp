@@ -93,7 +93,7 @@ export function getLocalThunk(id: number): ThunkAction {
   }
 }
 
-export function addNewLocalThunk(localUser: User, token:string): ThunkAction {
+export function addNewLocalThunk(localUser: User, token: string): ThunkAction {
   return (dispatch) => {
     return addNewUserAPI(localUser, token)
       .then((user) => {
@@ -109,7 +109,6 @@ export function updateLocalThunk(id: number, local: User): ThunkAction {
   return (dispatch) => {
     return updateUserAPI(id, local)
       .then((method) => {
-        console.log(method, 'Testing if can update user (updateLocalThunk)')
         dispatch(updateLocal(method))
       })
       .catch((err) => {
