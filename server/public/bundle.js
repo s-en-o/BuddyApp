@@ -29043,7 +29043,7 @@ function AllProfiles() {
         py: 8,
         marginTop: '100px'
       },
-      maxWidth: "md",
+      maxWidth: "lg",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_4__.Button, {
         variant: "outlined",
         onClick: () => {
@@ -29057,14 +29057,22 @@ function AllProfiles() {
         children: isLocal ? 'Show International' : 'Show Local'
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_4__.Grid, {
         container: true,
-        spacing: 4,
+        spacing: {
+          xs: 2,
+          md: 2
+        },
+        columns: {
+          xs: 3,
+          sm: 8,
+          md: 12
+        },
         children: filteredUsers.map(user => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Authenticated__WEBPACK_IMPORTED_MODULE_3__.AuthIdDoesNotMatch, {
           id: user?.auth_id,
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_4__.Grid, {
             item: true,
-            xs: 12,
+            xs: 4,
             sm: 6,
-            md: 6,
+            md: 3,
             children: showUsers ? null : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Link, {
               to: `/${user.id}`,
               onClick: handleViewProfile,
@@ -29075,23 +29083,21 @@ function AllProfiles() {
                 sx: {
                   width: '100%',
                   height: '100%',
-                  margin: 0,
+                  margin: 1,
                   borderRadius: '30px !important',
                   border: '1px solid',
                   borderColor: '#397fb54f',
-                  boxShadow: 'none'
-                  // bgcolor: '#424242',
+                  boxShadow: 'none',
+                  textAlign: 'center'
                 },
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_styles_imports__WEBPACK_IMPORTED_MODULE_4__.CardMedia, {
                   component: "img",
                   sx: {
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
+                    display: 'inline-block',
                     padding: 2,
-                    borderRadius: '30px',
-                    width: '380px',
-                    height: '380px',
+                    borderRadius: '100px',
+                    width: 150,
+                    height: 150,
                     objectFit: 'cover',
                     objectPosition: 'center center',
                     overflow: 'hidden'

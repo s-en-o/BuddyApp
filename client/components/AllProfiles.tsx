@@ -48,7 +48,7 @@ export function AllProfiles() {
 
   return (
     <>
-      <Container sx={{ py: 8, marginTop: '100px' }} maxWidth="md">
+      <Container sx={{ py: 8, marginTop: '100px' }} maxWidth="lg">
         <Button
           variant="outlined"
           onClick={() => {
@@ -60,10 +60,14 @@ export function AllProfiles() {
           {isLocal ? 'Show International' : 'Show Local'}
         </Button>
 
-        <Grid container spacing={4}>
+        <Grid
+          container
+          spacing={{ xs: 2, md: 2 }}
+          columns={{ xs: 3, sm: 8, md: 12 }}
+        >
           {filteredUsers.map((user) => (
             <AuthIdDoesNotMatch key={user.id} id={user?.auth_id}>
-              <Grid item xs={12} sm={6} md={6}>
+              <Grid item xs={4} sm={6} md={3}>
                 {showUsers ? null : (
                   <Link
                     to={`/${user.id}`}
@@ -74,24 +78,22 @@ export function AllProfiles() {
                       sx={{
                         width: '100%',
                         height: '100%',
-                        margin: 0,
+                        margin: 1,
                         borderRadius: '30px !important',
                         border: '1px solid',
                         borderColor: '#397fb54f',
                         boxShadow: 'none',
-                        // bgcolor: '#424242',
+                        textAlign: 'center',
                       }}
                     >
                       <CardMedia
                         component="img"
                         sx={{
-                          display: 'flex',
-                          justifyContent: 'center',
-                          alignItems: 'center',
+                          display: 'inline-block',
                           padding: 2,
-                          borderRadius: '30px',
-                          width: '380px',
-                          height: '380px',
+                          borderRadius: '100px',
+                          width: 150,
+                          height: 150,
                           objectFit: 'cover',
                           objectPosition: 'center center',
                           overflow: 'hidden',
