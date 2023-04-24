@@ -19,20 +19,33 @@ export default function Nav() {
     fontSize: '0.9em',
   })
 
+  let prevScrollPos = window.pageYOffset
+  let isScrolling = false
+
   function handleScroll() {
     const customAppBar = document.querySelector('.custom-appbar')
     if (customAppBar) {
-      if (window.scrollY > 0) {
-        customAppBar.classList.add('scroll')
-      } else {
+      const currentScrollPos = window.pageYOffset
+      if (prevScrollPos > currentScrollPos) {
         customAppBar.classList.remove('scroll')
+      } else {
+        customAppBar.classList.add('scroll')
       }
+      prevScrollPos = currentScrollPos
+      isScrolling = false
+    }
+  }
+
+  function scrollHandler() {
+    if (!isScrolling) {
+      window.requestAnimationFrame(handleScroll)
+      isScrolling = true
     }
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', scrollHandler)
+    return () => window.removeEventListener('scroll', scrollHandler)
   }, [])
 
   return (

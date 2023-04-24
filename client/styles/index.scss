@@ -1,32 +1,5 @@
 @use 'homestyle';
 
-
-// @charset "utf-8";
-
-// // Import a Google Font
-// @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-
-// // Import custom variables and Bulma overides
-// @import "./variables.scss";
-
-// // Import only what you need from Bulma
-// @import "bulma/sass/utilities/_all.sass";
-// @import "bulma/sass/base/_all.sass";
-// @import "bulma/sass/layout/section.sass";
-// @import "bulma/sass/layout/hero.sass";
-// @import "bulma/sass/elements/button.sass";
-// @import "bulma/sass/elements/container.sass";
-// @import "bulma/sass/elements/title.sass";
-// @import "bulma/sass/components/navbar.sass";
-// @import "bulma/sass/form/_all.sass";
-
-// .hero-body {
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-
-
 body{
   margin: 0;
 
@@ -63,19 +36,25 @@ header a{
   z-index: 3;
   border-radius: 50px;
   padding: 0.3em;
-  width: 90% !important;
+  width: 90% !important; 
   margin: 1em auto;
   box-shadow: none !important;
   border-color: #397fb54f !important;
   background-color: transparent !important;
-  transition: background-color  border-color  1s ease !important;
+  backdrop-filter: blur(5px);
   border: 0.5px;
+  
+  
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1.2s ease-in-out !important;
+  transition: 0.4s ease-in !important;
   
 }
 
 .custom-appbar.scroll {
-  backdrop-filter: blur(6px) !important;
-  background-color: #f0f0f046 !important;
+  opacity: 0;
+  transform: translateY(-100%);
 }
 
 .button-style{
@@ -114,5 +93,3 @@ header a{
 }
 
 
-
-//ado
