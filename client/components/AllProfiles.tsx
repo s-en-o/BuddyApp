@@ -90,8 +90,8 @@ export function AllProfiles() {
                         component="img"
                         sx={{
                           display: 'inline-block',
-                          padding: 2,
-                          borderRadius: '100px',
+                          padding: 4,
+                          borderRadius: '120px',
                           width: 150,
                           height: 150,
                           objectFit: 'cover',
