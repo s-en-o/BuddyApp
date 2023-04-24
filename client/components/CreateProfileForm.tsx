@@ -32,7 +32,6 @@ export default function CreateProfileForm() {
   const fake = {
     first_name: 'Rangga',
     last_name: 'Raditya',
-    user_name: 'ranggagokil',
     email: 'rangga@gmail.com',
     country_origin: 'Singapore',
     city: 'Woodlands',
@@ -102,10 +101,13 @@ export default function CreateProfileForm() {
           Create your profile
         </Typography>
 
-        <StyledContainer maxWidth="lg">
-          <StyledLargerCard align="center">
+        <StyledContainer maxWidth="md">
+          <StyledLargerCard
+            align="center"
+            sx={{ boxShadow: 'none !important' }}
+          >
             <form onSubmit={handleSubmit}>
-              <FormControl sx={{ textAlign: 'left' }}>
+              <FormControl sx={{ textAlign: 'left', width: '100%' }}>
                 <FormLabel
                   htmlFor="first_name"
                   sx={{ fontWeight: '600 !important' }}
@@ -125,7 +127,7 @@ export default function CreateProfileForm() {
                   htmlFor="last_name"
                   sx={{ fontWeight: '600 !important' }}
                 >
-                  Last name{' '}
+                  Last name
                 </FormLabel>
                 <TextField
                   type="text"
@@ -133,21 +135,6 @@ export default function CreateProfileForm() {
                   value={userMethod.last_name}
                   onChange={handleChange}
                   placeholder="Last name"
-                  sx={{ my: 2 }}
-                  required
-                ></TextField>
-                <FormLabel
-                  htmlFor="user_name"
-                  sx={{ fontWeight: '600 !important' }}
-                >
-                  User Name
-                </FormLabel>
-                <TextField
-                  type="text"
-                  name="user_name"
-                  value={userMethod.user_name}
-                  onChange={handleChange}
-                  placeholder="User name"
                   sx={{ my: 2 }}
                   required
                 ></TextField>
@@ -338,10 +325,16 @@ export default function CreateProfileForm() {
                 </FormLabel>
                 <Input type="file" id="profileImage" onChange={updateFile} />
                 <Button
-                  sx={{ my: 2, fontSize: '15px !important', marginTop: '10px' }}
+                  sx={{
+                    my: 2,
+                    fontSize: '18px !important',
+                    marginTop: '50px',
+                    padding: '10px',
+                    borderRadius: '30px !important',
+                  }}
                   type="submit"
-                  variant="outlined"
-                  className="button-style"
+                  variant="contained"
+                  className="login"
                 >
                   Submit
                 </Button>

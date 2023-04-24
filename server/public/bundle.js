@@ -29328,7 +29328,6 @@ function CreateProfileForm() {
   const fake = {
     first_name: 'Rangga',
     last_name: 'Raditya',
-    user_name: 'ranggagokil',
     email: 'rangga@gmail.com',
     country_origin: 'Singapore',
     city: 'Woodlands',
@@ -29391,14 +29390,18 @@ function CreateProfileForm() {
         gutterBottom: true,
         children: "Create your profile"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_5__.StyledContainer, {
-        maxWidth: "lg",
+        maxWidth: "md",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_styles_styles__WEBPACK_IMPORTED_MODULE_5__.StyledLargerCard, {
           align: "center",
+          sx: {
+            boxShadow: 'none !important'
+          },
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("form", {
             onSubmit: handleSubmit,
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_9__["default"], {
               sx: {
-                textAlign: 'left'
+                textAlign: 'left',
+                width: '100%'
               },
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_10__["default"], {
                 htmlFor: "first_name",
@@ -29416,34 +29419,18 @@ function CreateProfileForm() {
                   my: 2
                 },
                 required: true
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_10__["default"], {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_10__["default"], {
                 htmlFor: "last_name",
                 sx: {
                   fontWeight: '600 !important'
                 },
-                children: ["Last name", ' ']
+                children: "Last name"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_11__["default"], {
                 type: "text",
                 name: "last_name",
                 value: userMethod.last_name,
                 onChange: handleChange,
                 placeholder: "Last name",
-                sx: {
-                  my: 2
-                },
-                required: true
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_10__["default"], {
-                htmlFor: "user_name",
-                sx: {
-                  fontWeight: '600 !important'
-                },
-                children: "User Name"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_11__["default"], {
-                type: "text",
-                name: "user_name",
-                value: userMethod.user_name,
-                onChange: handleChange,
-                placeholder: "User name",
                 sx: {
                   my: 2
                 },
@@ -29661,12 +29648,14 @@ function CreateProfileForm() {
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_15__["default"], {
                 sx: {
                   my: 2,
-                  fontSize: '15px !important',
-                  marginTop: '10px'
+                  fontSize: '18px !important',
+                  marginTop: '50px',
+                  padding: '10px',
+                  borderRadius: '30px !important'
                 },
                 type: "submit",
-                variant: "outlined",
-                className: "button-style",
+                variant: "contained",
+                className: "login",
                 children: "Submit"
               })]
             })
