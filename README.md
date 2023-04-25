@@ -1,4 +1,4 @@
-# Buddy 🤗
+# Buddy 🐻
 
 ## About 
 
