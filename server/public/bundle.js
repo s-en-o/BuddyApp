@@ -30263,10 +30263,15 @@ function Nav() {
     const customAppBar = document.querySelector('.custom-appbar');
     if (customAppBar) {
       const currentScrollPos = window.pageYOffset;
-      if (prevScrollPos > currentScrollPos) {
+      if (currentScrollPos === 0) {
         customAppBar.classList.remove('scroll');
+        customAppBar.classList.remove('scrollUp');
+      } else if (prevScrollPos > currentScrollPos) {
+        customAppBar.classList.remove('scroll');
+        customAppBar.classList.add('scrollUp');
       } else {
         customAppBar.classList.add('scroll');
+        customAppBar.classList.remove('scrollUp');
       }
       prevScrollPos = currentScrollPos;
       isScrolling = false;
