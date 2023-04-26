@@ -1,12 +1,8 @@
-import * as React from 'react'
-
 import { useState, useEffect } from 'react'
 import { setLocalThunk } from '../actions/local'
 import { useAppDispatch, useAppSelector } from '../hooks'
 import { AuthIdDoesNotMatch } from './Authenticated'
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
-
-import { User } from '../../models/Users'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 import {
   Typography,
@@ -28,10 +24,6 @@ export function AllProfiles() {
   }, [dispatch])
 
   const [showUsers, setShowUsers] = useState(false)
-
-  // const userData: User[] = useAppSelector((store) => store.localReducer)
-  // const userId = Number(useParams().id)
-  // const userProfile = userData.find((person) => person.id === userId)
 
   const urlPath = useLocation().pathname
   const isLocal = urlPath.indexOf('local') !== -1
