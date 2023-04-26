@@ -28,13 +28,13 @@ export default function Nav() {
       const currentScrollPos = window.pageYOffset
       if (currentScrollPos === 0) {
         customAppBar.classList.remove('scroll')
-        customAppBar.classList.remove('scrollUp')
+        customAppBar.classList.remove('new-state')
       } else if (prevScrollPos > currentScrollPos) {
         customAppBar.classList.remove('scroll')
-        customAppBar.classList.add('scrollUp')
+        customAppBar.classList.add('new-state')
       } else {
         customAppBar.classList.add('scroll')
-        customAppBar.classList.remove('scrollUp')
+        customAppBar.classList.remove('new-state')
       }
 
       prevScrollPos = currentScrollPos
