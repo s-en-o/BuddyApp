@@ -28,13 +28,13 @@ export default function Nav() {
       const currentScrollPos = window.pageYOffset
       if (currentScrollPos === 0) {
         customAppBar.classList.remove('scroll')
-        customAppBar.classList.remove('scrollUp')
+        customAppBar.classList.remove('new-state')
       } else if (prevScrollPos > currentScrollPos) {
         customAppBar.classList.remove('scroll')
-        customAppBar.classList.add('scrollUp')
+        customAppBar.classList.add('new-state')
       } else {
         customAppBar.classList.add('scroll')
-        customAppBar.classList.remove('scrollUp')
+        customAppBar.classList.remove('new-state')
       }
 
       prevScrollPos = currentScrollPos
@@ -169,13 +169,3 @@ export default function Nav() {
     </AppBar>
   )
 }
-
-//
-
-//NOTES FOR ESTRELLA RE: MATERIAL UI
-// addign in something
-// ThemeProvider is the main wrapper that allows us to manipulate the standard theme for Material UI. This is on every component as the main wrap around
-// AppBar is specifically for navigation https://mui.com/material-ui/react-app-bar/
-// ToolBar allows us to insert functionality into the app bar https://mui.com/material-ui/api/toolbar/
-// Typography is anything content/words (h1 etc). There are specific ones that can be found here: https://mui.com/material-ui/customization/typography/
-// there is a cool icons package that I downloaded. To check out others available: https://mui.com/material-ui/material-icons/

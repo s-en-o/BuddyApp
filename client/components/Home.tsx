@@ -28,7 +28,7 @@ function Home() {
           <Typography
             variant="h3"
             align="center"
-            sx={{ marginTop: '110px', height: '20vh', p: 10 }}
+            sx={{ marginTop: '90px', height: '20vh', p: 10 }}
             className="text-hearder"
           >
             Connecting people from abroad with local Wellingtonian&apos;s
