@@ -21,7 +21,7 @@ So whether you're an international traveler or a new resident, download Buddy to
 
 
 ### Wireframing
-Link : https://drive.google.com/drive/folders/1X3dYzl778TrfGkIUWMyfwIr5OY4zvA7c?usp=share_link
+Link : https://www.figma.com/file/KjxNiK5o2mjUIZ5GEQl4gp/Buddy?node-id=0%3A1&t=DCW0adTAwU3FB6vr-1
 
 
 ### User Stories 
