@@ -5,7 +5,7 @@
   "repository": "https://github.com/dev-academy-challenges/buddy.git",
   "main": "server/index.ts",
   "scripts": {
-    "start": "ts-node server",
+    "start": "ts-node server/index.ts",
     "dev": "run-p dev:client dev:server",
     "dev:client": "npm run webpack -- --watch",
     "dev:server": "nodemon --watch server server/index.ts",
