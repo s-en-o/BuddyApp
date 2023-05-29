@@ -9,8 +9,8 @@ import store from './store'
 document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('app') as HTMLElement).render(
     <Auth0Provider
-      domain="kahu-jennifer.au.auth0.com"
-      clientId="IHfAIogGxDwFfPzCFt8WGt8i3QQl3gPu"
+      domain="kahu-humaidi.au.auth0.com"
+      clientId="ykahfSNlXBFpe77TYqp4uVHM1af8SSwV"
       audience="https://buddy/api"
       redirectUri={window.location.origin}
       useRefreshTokens={true}
